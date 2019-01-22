@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  head: one
+  torso: one
+  leg: one
+  arm: one
+
+two:
+  name: MyString
+  head: two
+  torso: two
+  leg: two
+  arm: two

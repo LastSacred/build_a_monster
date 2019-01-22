@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  limg: MyString
+  rimg: MyString
+  weight: 1
+  power: 1
+  defense: 1
+  cuteness: 1
+
+two:
+  name: MyString
+  limg: MyString
+  rimg: MyString
+  weight: 1
+  power: 1
+  defense: 1
+  cuteness: 1
