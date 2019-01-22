@@ -26,3 +26,6 @@ lumberjack_torso = Torso.create(name: "Lumberjack Torso", weight: 250, power: 0,
 turtle_shell_torso = Torso.create(name: "Turtle Shell Torso", weight: 410, power: 0, defense: 877, dadbod: false)
 iron_man_torso = Torso.create(name: "Iron Man Torso", weight: 573, power: 278, defense: 900, dadbod: false)
 sumo_torso = Torso.create(name: "Sumo Torso", weight: 600, power: 103, defense: 708, dadbod: true)
+
+manbearpig = Monster.create(name: "Manbearpig", head: laster_eyes_head, torso: iron_man_torso, arm: bear_arms, leg: tank_legs)
+curmudgeon = Monster.create(name: "The Curmudgeon", head: zombie_head, torso: lumberjack_torso, arm: lobster_arms, leg: horse_legs)
