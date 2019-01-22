@@ -11,3 +11,8 @@ gun_arms = Arm.create(name: "Gun Arms", weight: 100, power:35, defense: 420, cut
 hook_arms = Arm.create(name: "Hook Arms", weight: 88, power:235, defense: 343, cuteness: 6)
 lobster_arms = Arm.create(name: "Lobster Arms", weight: 94, power:186, defense: 920, cuteness: 13)
 shield_arms = Arm.create(name: "Shield Arms", weight: 136, power:77, defense: 950, cuteness: 5)
+
+tank_legs = Leg.create(name: "Tank Legs", weight: 581, power: 105, defense: 930, speed: 37)
+horse_legs = Leg.create(name: "Horse Legs", weight: 206, power: 304, defense: 536, speed: 174)
+rocket_legs = Leg.create(name: "Rocket Legs", weight: 380, power: 261, defense: 763, speed: 191)
+high_heel_legs = Leg.create(name: "High Heel Legs", weight: 143, power: 382, defense: 30, speed: 48)
