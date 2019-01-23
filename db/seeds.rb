@@ -32,6 +32,15 @@ sumo_torso = Torso.create(name: "Sumo Torso", weight: 600, power: 103, defense: 
 manbearpig = Monster.create(name: "Manbearpig", head: laser_eyes_head, torso: iron_man_torso, arm: bear_arms, leg: tank_legs)
 curmudgeon = Monster.create(name: "The Curmudgeon", head: zombie_head, torso: lumberjack_torso, arm: lobster_arms, leg: horse_legs)
 
-10.times do
-  Monster.create(name: Faker::Space.constellation, head: Head.all.sample, torso: Torso.all.sample, arm: Arm.all.sample, leg: Leg.all.sample)
+faker_cats = [
+  "planet",
+  "moon",
+  "galaxy",
+  "constellation",
+  "star"
+]
+
+50.times do
+  faker_cat = faker_cats.sample
+  Monster.create(name: Faker::Space.public_send(faker_cat).tr("0-9", "").strip, head: Head.all.sample, torso: Torso.all.sample, arm: Arm.all.sample, leg: Leg.all.sample)
 end

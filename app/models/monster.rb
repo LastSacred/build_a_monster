@@ -4,6 +4,8 @@ class Monster < ApplicationRecord
   belongs_to :leg
   belongs_to :arm
 
+  validates :name, uniqueness: true
+
   def power
     [self.head.power, self.torso.power, self.arm.power, self.leg.power].sum
   end
