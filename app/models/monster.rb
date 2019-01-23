@@ -66,11 +66,7 @@ class Monster < ApplicationRecord
     @@attrs.each do |attr|
       stats[attr] = self.public_send(attr)
     end
-<<<<<<< HEAD
-		stats
-=======
     stats
->>>>>>> cf05cb6031b52deab22ccbacc1ce42cf98fa0339
   end
 
   def imgs
@@ -80,12 +76,7 @@ class Monster < ApplicationRecord
     imgs[:l_arm] = self.arm.limg
     imgs[:r_arm] = self.arm.rimg
     imgs[:leg] = self.leg.img
-<<<<<<< HEAD
-		imgs
-=======
-
     imgs
->>>>>>> cf05cb6031b52deab22ccbacc1ce42cf98fa0339
   end
 
   def self.avg(attr)

@@ -1,29 +1,23 @@
 <h1>Monster Stats</h1>
 
-<% @stats.each do |attr, display| %>
-  <hr>
-  <hr>
-  <h2><%= attr.capitalize %></h2>
-  <hr>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Attribute</th>
+      <th scope="col">Average</th>
+      <th scope="col">Highest</th>
+      <th scope="col">Lowest</th>
+    </tr>
+  </thead>
+  <tbody>
+		<% @stats.each do |attr, display| %>
+    <tr>
+      <th scope="row"><%= attr.capitalize %></th>
+      <td><%= display[:average] %></td>
+      <td><%= display[:highest].name %>: <%= display[:highest].public_send(attr) %></td>
+      <td><%= display[:lowest].name %>: <%= display[:lowest].public_send(attr) %></td>
+    </tr>
+		<% end %>
 
-  <strong>Average:</strong>
-  <br>
-  <%= display[:average] %>
-  <br>
-  <br>
-
-  <strong>Highest:</strong>
-  <br>
-  <%= display[:highest].name %>
-  <%= display[:highest].public_send(attr) %>
-  <br>
-  <br>
-
-  <strong>Lowest:</strong>
-  <br>
-  <%= display[:lowest].name %>
-  <%= display[:lowest].public_send(attr) %>
-  <br>
-  <br>
-  <br>
-<% end %>
+  </tbody>
+</table>

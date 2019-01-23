@@ -18,12 +18,8 @@ class MonstersController < ApplicationController
 
   def show
     @monster = Monster.find(params[:id])
-<<<<<<< HEAD
-		@imgs = @monster.imgs
-=======
     @imgs = @monster.imgs
     @stats = @monster.stats
->>>>>>> cf05cb6031b52deab22ccbacc1ce42cf98fa0339
   end
 
   def edit
