@@ -18,10 +18,16 @@ class MonstersController < ApplicationController
 
   def show
     @monster = Monster.find(params[:id])
+    @imgs = @monster.imgs
+    @stats = @monster.stats
   end
 
   def edit
 		@monster = Monster.find(params[:id])
+    @heads = Head.all
+    @arms = Arm.all
+    @legs = Leg.all
+    @torsos = Torso.all
   end
 
   def create
@@ -31,7 +37,9 @@ class MonstersController < ApplicationController
   end
 
   def update
-
+    @monster = Monster.find(params[:id])
+    @monster.update(monster_params)
+    redirect_to monster_path(@monster)
   end
 
   def destroy
@@ -41,7 +49,7 @@ class MonstersController < ApplicationController
 	private
 
 	def monster_params
-		params.require(:monster).permit(:head, :torso, :leg, :arm, :head_id, :torso_id, :leg_id, :arm_id)
+		params.require(:monster).permit(:name, :head, :torso, :leg, :arm, :head_id, :torso_id, :leg_id, :arm_id)
 	end
 
 end

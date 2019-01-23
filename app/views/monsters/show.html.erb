@@ -1,13 +1,20 @@
-<h2><%= @monster.name %></h2>
+<h1><%= @monster.name %></h1>
 
-<%= image_tag(@monster.head.img, height: 300) %><br />
-<%= image_tag(@monster.torso.img, height: 300) %><br />
-<%= image_tag(@monster.leg.img, height: 300) %><br />
+<%= image_tag(@imgs[:head], height: 300) %><br />
+<%= image_tag(@imgs[:torso], height: 300) %><br />
+<%= image_tag(@imgs[:leg], height: 300) %><br />
+<%= image_tag(@imgs[:l_arm], height: 300) %><br />
+<%= image_tag(@imgs[:r_arm], height: 300) %><br />
 
 <br /><br />
 
+<h2>Stats</h2>
 
-<h4><%= @monster.name %> Details:</h4>
+<% @stats.each do |attr, value| %>
+  <%= attr.capitalize %>: <%= value %><br />
+<% end %>
+
+<!-- <h4><%= @monster.name %> Details:</h4>
 <h5><%= @monster.head.name %></h5>
   <ul>
     <li>Weight: <%= @monster.head.weight %></li>
@@ -31,8 +38,13 @@
     <li>Power: <%= @monster.leg.power %></li>
     <li>Defense: <%= @monster.leg.defense %></li>
     <li>Speed: <%= @monster.leg.speed %></li>
-  </ul>
+  </ul> -->
 
-<button type="button" class="btn btn-info">Info</button>
 
-<%= link_to "All Monsters", monsters_path %>
+<br />
+
+<a class="btn btn-primary" href="<%= edit_monster_path(@monster) %>" role="button">Edit Monster</a>
+
+<a class="btn btn-primary" href="<%= monsters_path %>" role="button">All Monsters</a>
+
+<br /><br />
