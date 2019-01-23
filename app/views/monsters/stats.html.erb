@@ -1,0 +1,22 @@
+<h1>Monster Stats</h1>
+
+<% @stats.each do |attr, display| %>
+  <hr>
+  <hr>
+  <h2><%= attr.capitalize %></h2>
+  <hr>
+
+  <strong>Average:</strong>
+  <br>
+  <%= display[:average] %>
+  <br>
+  <br>
+
+  <strong>Highest:</strong>
+  <br>
+  <%= display[:highest].name %>
+  <%= display[:highest].public_send(attr) %>
+  <br>
+  <br>
+  <br>
+<% end %>

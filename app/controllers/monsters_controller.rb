@@ -5,7 +5,7 @@ class MonstersController < ApplicationController
   end
 
   def stats
-
+    @stats = Monster.stats
   end
 
   def new
