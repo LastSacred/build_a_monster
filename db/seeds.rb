@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-flamethrower_arms = Arm.create(name: "Flamethrower Arms", img: "flamethrower_arms.png", limg: "flamethrower_arms.png", rimg: "flamethrower_arms.png", weight: 115, power:391, defense: 370, cuteness: 8)
-bear_arms = Arm.create(name: "Bear Arms", img: "bear_arms.png", limg: "bear_arms.png", rimg: "bear_arms.png", weight: 107, power:245, defense: 521, cuteness: 15)
-gun_arms = Arm.create(name: "Gun Arms", img: "bear_arms.png", limg: "bear_arms.png", rimg: "lobster_arms.png", weight: 100, power:35, defense: 420, cuteness: 19)
-hook_arms = Arm.create(name: "Hook Arms", img: "bear_arms.png", limg: "bear_arms.png", rimg: "lobster_arms.png", weight: 88, power:235, defense: 343, cuteness: 6)
-lobster_arms = Arm.create(name: "Lobster Arms", img: "lobster_arms.png", limg: "lobster_arms.png", rimg: "lobster_arms.png", weight: 94, power:186, defense: 920, cuteness: 13)
-shield_arms = Arm.create(name: "Shield Arms", img: "bear_arms.png", limg: "bear_arms.png", rimg: "lobster_arms.png", weight: 136, power:77, defense: 950, cuteness: 5)
+flamethrower_arms = Arm.create(name: "Flamethrower Arms", img: "flamethrower_arms.png", limg: "flamethrower_arm_l.png", rimg: "flamethrower_arm_r.png", weight: 115, power:391, defense: 370, cuteness: 8)
+bear_arms = Arm.create(name: "Bear Arms", img: "bear_arms.png", limg: "bear_arm_lr.png", rimg: "bear_arm_lr.png", weight: 107, power:245, defense: 521, cuteness: 15)
+gun_arms = Arm.create(name: "Gun Arms", img: "bear_arms.png", limg: "bear_arm_lr.png", rimg: "lobster_arm_lr.png", weight: 100, power:35, defense: 420, cuteness: 19)
+hook_arms = Arm.create(name: "Hook Arms", img: "bear_arms.png", limg: "bear_arm_lr.png", rimg: "lobster_arm_lr.png", weight: 88, power:235, defense: 343, cuteness: 6)
+lobster_arms = Arm.create(name: "Lobster Arms", img: "lobster_arms.png", limg: "lobster_arm_l.png", rimg: "lobster_arm_r.png", weight: 94, power:186, defense: 920, cuteness: 13)
+shield_arms = Arm.create(name: "Shield Arms", img: "bear_arms.png", limg: "bear_arm_lr.png", rimg: "lobster_arm_lr.png", weight: 136, power:77, defense: 950, cuteness: 5)
 
 tank_legs = Leg.create(name: "Tank Legs", img: "tank_legs.png", weight: 581, power: 105, defense: 930, speed: 37)
 horse_legs = Leg.create(name: "Horse Legs", img: "horse_legs.png", weight: 206, power: 304, defense: 536, speed: 174)
