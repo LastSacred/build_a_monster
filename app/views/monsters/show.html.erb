@@ -1,0 +1,38 @@
+<h2><%= @monster.name %></h2>
+
+<%= image_tag(@monster.head.img, height: 300) %><br />
+<%= image_tag(@monster.torso.img, height: 300) %><br />
+<%= image_tag(@monster.leg.img, height: 300) %><br />
+
+<br /><br />
+
+
+<h4><%= @monster.name %> Details:</h4>
+<h5><%= @monster.head.name %></h5>
+  <ul>
+    <li>Weight: <%= @monster.head.weight %></li>
+    <li>Power: <%= @monster.head.power %></li>
+    <li>Defense: <%= @monster.head.defense %></li>
+    <li>Cuteness: <%= @monster.head.cuteness %></li>
+    <li>Intelligence: <%= @monster.head.intelligence %></li>
+  </ul>
+
+  <h5><%= @monster.torso.name %></h5>
+  <ul>
+    <li>Weight: <%= @monster.torso.weight %></li>
+    <li>Power: <%= @monster.torso.power %></li>
+    <li>Defense: <%= @monster.torso.defense %></li>
+    <li>Dadbod? <%= @monster.torso.dadbod %></li>
+  </ul>
+
+  <h5><%= @monster.leg.name %></h5>
+  <ul>
+    <li>Weight: <%= @monster.leg.weight %></li>
+    <li>Power: <%= @monster.leg.power %></li>
+    <li>Defense: <%= @monster.leg.defense %></li>
+    <li>Speed: <%= @monster.leg.speed %></li>
+  </ul>
+
+<button type="button" class="btn btn-info">Info</button>
+
+<%= link_to "All Monsters", monsters_path %>
