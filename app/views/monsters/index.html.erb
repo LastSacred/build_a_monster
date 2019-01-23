@@ -1,0 +1,11 @@
+<h2>All Monsters</h2>
+<ul>
+  <% @monsters.each do |monster| %>
+  <li>
+    <%= link_to monster.name, monster_path(monster) %><br />
+  </li>
+  <% end %>
+</ul>
+
+
+<%= image_tag("manbearpig.png", height: "100")%>
