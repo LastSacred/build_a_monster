@@ -56,6 +56,10 @@ class Monster < ApplicationRecord
     self.all.max_by {|monster| monster.public_send(attr)}
   end
 
+  def self.lowest(attr)
+    self.all.min_by {|monster| monster.public_send(attr)}
+  end
+
   def self.stats
     attrs = [
       :power,
@@ -73,6 +77,7 @@ class Monster < ApplicationRecord
       stats[attr] = {}
       stats[attr][:average] = self.avg(attr)
       stats[attr][:highest] = self.highest(attr)
+      stats[attr][:lowest] = self.lowest(attr)
     end
     stats
   end
