@@ -1,0 +1,20 @@
+<h1>Create A Robot!</h1>
+
+<%= form_for (@monster) do |f| %>
+  <p>Choose a Head:</p>
+<%= f.collection_radio_buttons :head_id, @heads, :id, :name %><br>
+	<p>Choose a Torso:</p>
+<%= f.collection_radio_buttons :torso_id, @torsos, :id, :name %><br>
+	<p>Choose the Arms:</p>
+<%= f.collection_radio_buttons :arm_id, @arms, :id, :name %><br>
+	<p>Choose the Legs:</p>
+<%= f.collection_radio_buttons :leg_id, @legs, :id, :name %><br><br>
+
+
+<!-- <input type="radio" name="head" value="laser_eyes_head"> Laser Eyes Head
+<input type="radio" name="head" value="mustache_head"> Mustache Head
+<input type="radio" name="head" value="zombie_head"> Zombie Head
+<input type="radio" name="head" value="heart_eyes_head"> Heart Eyes Head -->
+
+  <%= f.submit %>
+<% end %>
