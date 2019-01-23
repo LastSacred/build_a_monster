@@ -50,6 +50,15 @@ class Monster < ApplicationRecord
     dateability
   end
 
+  def imgs
+    imgs = {}
+    imgs[:head] = self.head.img
+    imgs[:torso] = self.torso.img
+    imgs[:l_arm] = self.arm.limg
+    imgs[:r_arm] = self.arm.rimg
+    imgs[:leg] = self.leg.img
+  end
+  
   def self.avg(attr)
     self.all.collect { |monster| monster.public_send(attr) }.mean.to_i
   end
