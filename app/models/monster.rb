@@ -6,6 +6,16 @@ class Monster < ApplicationRecord
 
   validates :name, uniqueness: true
 
+  @@attrs = [
+    :power,
+    :defense,
+    :weight,
+    :speed,
+    :cuteness,
+    :intelligence,
+    :dateability
+  ]
+
   def power
     [self.head.power, self.torso.power, self.arm.power, self.leg.power].sum
   end
@@ -50,6 +60,14 @@ class Monster < ApplicationRecord
     dateability
   end
 
+  def stats
+    stats = {}
+
+    @@attrs.each do |attr|
+      stats[attr] = self.public_send(attr)
+    end
+  end
+
   def imgs
     imgs = {}
     imgs[:head] = self.head.img
@@ -58,7 +76,7 @@ class Monster < ApplicationRecord
     imgs[:r_arm] = self.arm.rimg
     imgs[:leg] = self.leg.img
   end
-  
+
   def self.avg(attr)
     self.all.collect { |monster| monster.public_send(attr) }.mean.to_i
   end
@@ -72,19 +90,9 @@ class Monster < ApplicationRecord
   end
 
   def self.stats
-    attrs = [
-      :power,
-      :defense,
-      :weight,
-      :speed,
-      :cuteness,
-      :intelligence,
-      :dateability
-    ]
-
     stats = {}
 
-    attrs.each do |attr|
+    @@attrs.each do |attr|
       stats[attr] = {}
       stats[attr][:average] = self.avg(attr)
       stats[attr][:highest] = self.highest(attr)
