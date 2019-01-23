@@ -18,6 +18,7 @@ class MonstersController < ApplicationController
 
   def show
     @monster = Monster.find(params[:id])
+		@imgs = @monster.imgs
   end
 
   def edit
