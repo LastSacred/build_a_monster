@@ -2,6 +2,8 @@ class MonstersController < ApplicationController
 
   def index
     @monsters = Monster.imgs
+		@attributes = ["power", "defense", "weight", "speed", "cuteness", "dateability"]
+		@prompt = "Select an Attribute"
   end
 
   def stats
@@ -24,6 +26,9 @@ class MonstersController < ApplicationController
 
   def order
     @monsters = Monster.imgs.sort_by {|monster, values| -values[:object].public_send(params[:attr])}
+		@attributes = ["power", "defense", "weight", "speed", "cuteness", "dateability"]
+		@attributes.unshift(@attributes.delete(params[:attr]))
+		@prompt = nil
     render :index
   end
 

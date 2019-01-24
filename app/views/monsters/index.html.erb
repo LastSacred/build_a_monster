@@ -1,13 +1,7 @@
 <h1>All Monsters</h1>
 
 <%= form_tag order_monsters_path do %>
-  <%= select_tag :attr,
-    "<option>power</option>
-    <option>defense</option>
-    <option>weight</option>
-    <option>speed</option>
-    <option>cuteness</option>
-    <option>dateability</option>".html_safe %>
+  <%= select_tag :attr, options_for_select(@attributes), prompt: @prompt %>
   <%= submit_tag "Order by" %>
 <% end %>
 <br />
