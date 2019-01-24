@@ -1,3 +1,99 @@
+.monster_bod {
+  width: 500px;
+  height: 700px;
+  position: relative;
+  right: 90px;
+}
+
+.monster_bod img {
+  position: absolute;
+}
+
+.head {
+  z-index: 4;
+}
+
+.torso {
+  z-index: 3;
+}
+
+.leg {
+  z-index: 2;
+}
+
+.l_arm {
+  z-index: 1;
+}
+
+.r_arm {
+  z-index: 5;
+}
+
+.zombie_head {
+  width: 45%;
+  left: 26%;
+}
+
+.laser_eyes_head {
+  width: 44%;
+  top: 2.5%;
+  left: 27.5%;
+}
+
+.mustache_head {
+  width: 46%;
+  top: 4%;
+  left: 25%;
+}
+
+.lumberjack_torso {
+  width: 50%;
+  top: 17.5%;
+  left: 20%;
+}
+
+.iron_man_torso {
+  width: 53%;
+  top: 18%;
+  left: 22%;
+}
+
+.sumo_torso {
+  width: 54%;
+  top: 20%;
+  left: 21%;
+}
+
+.horse_legs {
+  width: 62%;
+  top: 45.5%;
+  left: 13%;
+}
+
+.tank_legs {
+  width: 68%;
+  top: 42.5%;
+  left: 11%;
+}
+
+.rocket_legs {
+  width: 57%;
+  top: 46.5%;
+  left: 20%;
+}
+
+.lobster_arm_l {
+  width: 23%;
+  top: 25%;
+  left:53%;
+}
+
+.lobster_arm_r {
+  width: 23%;
+  top: 24.5%;
+  left:16.5%;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
