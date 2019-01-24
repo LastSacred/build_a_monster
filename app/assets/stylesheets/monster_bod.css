@@ -48,7 +48,8 @@
 
 .zombie_head {
   width: 45%;
-  left: 26%;
+  top: 1%;
+  left: 26.5%;
 }
 
 .laser_eyes_head {
@@ -95,7 +96,7 @@
 
 .rocket_legs {
   width: 57%;
-  top: 46.5%;
+  top: 45%;
   left: 20%;
 }
 
