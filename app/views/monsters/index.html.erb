@@ -1,4 +1,16 @@
 <h1>All Monsters</h1>
-<% @monsters.each do |monster| %>
-  <%= link_to monster.name, monster_path(monster) %><br />
-<% end %>
+
+<div class="monster_container">
+  <% @monsters.each do |monster, imgs| %>
+  <div class="each_monster">
+    <h3><%= monster %></h3>
+    <div class="monster_bod_small">
+      <%= image_tag(imgs[:head], class: "head" + " " + imgs[:head].gsub(".png", "")) %><br />
+      <%= image_tag(imgs[:torso], class: "torso" + " " + imgs[:torso].gsub(".png", "")) %><br />
+      <%= image_tag(imgs[:leg], class: "leg" + " " + imgs[:leg].gsub(".png", "")) %><br />
+      <%= image_tag(imgs[:l_arm], class: "l_arm" + " " + imgs[:l_arm].gsub(".png", "")) %><br />
+      <%= image_tag(imgs[:r_arm], class: "r_arm" + " " + imgs[:r_arm].gsub(".png", "")) %><br />
+    </div>
+  </div>
+  <% end %>
+</div>

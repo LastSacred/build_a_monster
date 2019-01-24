@@ -5,8 +5,25 @@
   margin: auto;
 }
 
+.monster_bod_small {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  margin: auto;
+}
+
 .monster_bod img {
   position: absolute;
+}
+
+.monster_bod_small img {
+  position: absolute;
+}
+
+.monster_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .head {
