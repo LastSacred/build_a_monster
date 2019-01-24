@@ -79,6 +79,19 @@ class Monster < ApplicationRecord
     imgs
   end
 
+  def self.imgs
+    imgs = {}
+    self.all.each do |monster|
+      imgs[monster.name] = {}
+      imgs[monster.name][:head] = monster.head.img
+      imgs[monster.name][:torso] = monster.torso.img
+      imgs[monster.name][:l_arm] = monster.arm.limg
+      imgs[monster.name][:r_arm] = monster.arm.rimg
+      imgs[monster.name][:leg] = monster.leg.img
+    end
+    imgs
+  end
+
   def self.avg(attr)
     self.all.collect { |monster| monster.public_send(attr) }.mean.to_i
   end
