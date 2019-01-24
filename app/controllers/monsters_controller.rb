@@ -32,8 +32,21 @@ class MonstersController < ApplicationController
 
   def create
 		@monster = Monster.new(monster_params)
-		@monster.save
-		redirect_to monster_path(@monster)
+		if @monster.save
+			redirect_to monster_path(@monster)
+		else
+			@heads = Head.all
+			@arms = Arm.all
+			@legs = Leg.all
+			@torsos = Torso.all
+			render :new
+		# if @monster.save
+		# 	# @monster.save
+		# 	redirect_to monster_path(@monster)
+		# else
+		# 	@banana = "You must select a part for each body part"
+		# 	render :new
+		end
   end
 
   def update
