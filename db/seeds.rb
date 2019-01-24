@@ -31,7 +31,7 @@ sumo_torso = Torso.create(name: "Sumo Torso", img: "sumo_torso.png", weight: 600
 
 manbearpig = Monster.create(name: "Manbearpig", head: laser_eyes_head, torso: iron_man_torso, arm: bear_arms, leg: tank_legs)
 curmudgeon = Monster.create(name: "The Curmudgeon", head: zombie_head, torso: lumberjack_torso, arm: lobster_arms, leg: horse_legs)
-boyfriend = Monster.create(name: "Sara's Boyfriend", head: mustache_head, torso: sumo_torso, arm: flamethrower_arms, leg: rocket_legs)
+boyfriend = Monster.create(name: "Sarah's Boyfriend", head: mustache_head, torso: sumo_torso, arm: flamethrower_arms, leg: rocket_legs)
 
 faker_cats = [
   "planet",
