@@ -14,8 +14,8 @@
     <tr>
       <th scope="row"><%= attr.capitalize %></th>
       <td><%= display[:average] %></td>
-      <td><%= display[:highest].name %>: <%= display[:highest].public_send(attr) %></td>
-      <td><%= display[:lowest].name %>: <%= display[:lowest].public_send(attr) %></td>
+      <td><%= link_to display[:highest].name, monster_path(display[:highest]) %>: <%= display[:highest].public_send(attr) %></td>
+      <td><%= link_to display[:lowest].name, monster_path(display[:lowest]) %>: <%= display[:lowest].public_send(attr) %></td>
     </tr>
 		<% end %>
 

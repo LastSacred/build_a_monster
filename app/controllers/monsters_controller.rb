@@ -2,11 +2,6 @@ class MonstersController < ApplicationController
 
   def index
     @monsters = Monster.imgs
-
-
-    # @monster_images = @monsters.collect do |monster|
-    #   monster.imgs
-    # end
   end
 
   def stats
