@@ -8,40 +8,11 @@
   <%= image_tag(@imgs[:r_arm], class: "r_arm" + " " + @imgs[:r_arm].gsub(".png", "")) %><br />
 </div>
 
-<br /><br />
-
 <h2>Stats</h2>
 
 <% @stats.each do |attr, value| %>
   <%= attr.capitalize %>: <%= value %><br />
 <% end %>
-
-<!-- <h4><%= @monster.name %> Details:</h4>
-<h5><%= @monster.head.name %></h5>
-  <ul>
-    <li>Weight: <%= @monster.head.weight %></li>
-    <li>Power: <%= @monster.head.power %></li>
-    <li>Defense: <%= @monster.head.defense %></li>
-    <li>Cuteness: <%= @monster.head.cuteness %></li>
-    <li>Intelligence: <%= @monster.head.intelligence %></li>
-  </ul>
-
-  <h5><%= @monster.torso.name %></h5>
-  <ul>
-    <li>Weight: <%= @monster.torso.weight %></li>
-    <li>Power: <%= @monster.torso.power %></li>
-    <li>Defense: <%= @monster.torso.defense %></li>
-    <li>Dadbod? <%= @monster.torso.dadbod %></li>
-  </ul>
-
-  <h5><%= @monster.leg.name %></h5>
-  <ul>
-    <li>Weight: <%= @monster.leg.weight %></li>
-    <li>Power: <%= @monster.leg.power %></li>
-    <li>Defense: <%= @monster.leg.defense %></li>
-    <li>Speed: <%= @monster.leg.speed %></li>
-  </ul> -->
-
 
 <br />
 

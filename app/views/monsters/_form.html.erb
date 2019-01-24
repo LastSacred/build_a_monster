@@ -9,7 +9,7 @@
             b.label {b.radio_button + image_tag(b.object.img, height: 150)} end %><br><br /><br />
 	<p>Choose the Arms:</p>
     <%= f.collection_radio_buttons :arm_id, @arms, :id, :name do |b|
-            b.label {b.radio_button + image_tag(b.object.limg, height: 150)} end %><br><br /><br />
+            b.label {b.radio_button + image_tag(b.object.img, height: 150)} end %><br><br /><br />
 	<p>Choose the Legs:</p>
     <%= f.collection_radio_buttons :leg_id, @legs, :id, :name do |b|
             b.label {b.radio_button + image_tag(b.object.img, height: 150)} end %><br><br><br />
