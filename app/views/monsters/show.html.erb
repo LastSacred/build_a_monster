@@ -22,5 +22,9 @@
 
 <a class="btn btn-primary" href="<%= monsters_stats_path %>" role="button">All Stats</a>
 
+<br /><br />
+  <%= form_tag monster_path(@monster.id), method: "delete" do %>
+    <%= submit_tag("Delete", :class => "btn btn-danger" ) %>
+  <% end %>
 
 <br /><br />
