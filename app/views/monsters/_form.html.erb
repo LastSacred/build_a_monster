@@ -6,13 +6,13 @@
       prohibited this post from being saved:
     </h2>
 
-    <ul>
     <% @monster.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
+      <p><%= msg %></p>
     <% end %>
-    </ul>
   </div>
 <% end %>
+
+<br />
   <p>Monster's Name:</p>
     <%= f.text_field :name %><br /><br />
   <p>Choose a Head:</p>

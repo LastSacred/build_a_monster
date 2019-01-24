@@ -5,6 +5,7 @@ class Monster < ApplicationRecord
   belongs_to :arm
 
   validates :name, uniqueness: true
+  validates :name, presence: true
 
   @@attrs = [
     :power,
@@ -83,6 +84,7 @@ class Monster < ApplicationRecord
     imgs = {}
     self.all.each do |monster|
       imgs[monster.name] = {}
+      imgs[monster.name][:object] = monster
       imgs[monster.name][:head] = monster.head.img
       imgs[monster.name][:torso] = monster.torso.img
       imgs[monster.name][:l_arm] = monster.arm.limg
