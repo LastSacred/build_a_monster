@@ -1,4 +1,18 @@
 <%= form_for (@monster) do |f| %>
+<% if @monster.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@monster.errors.count, "error") %>
+      prohibited this post from being saved:
+    </h2>
+
+    <ul>
+    <% @monster.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
   <p>Monster's Name:</p>
     <%= f.text_field :name %><br /><br />
   <p>Choose a Head:</p>
