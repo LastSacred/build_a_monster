@@ -17,6 +17,10 @@ class Monster < ApplicationRecord
     :dateability
   ]
 
+  def self.attrs
+    @@attrs
+  end
+
   def power
     [self.head.power, self.torso.power, self.arm.power, self.leg.power].sum
   end

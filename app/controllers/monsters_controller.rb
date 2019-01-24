@@ -22,6 +22,11 @@ class MonstersController < ApplicationController
     @stats = @monster.stats
   end
 
+  def order
+    @monsters = Monster.imgs.sort_by {|monster, values| -values[:object].public_send(params[:attr])}
+    render :index
+  end
+
   def edit
 		@monster = Monster.find(params[:id])
     @heads = Head.all
