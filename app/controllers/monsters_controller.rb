@@ -57,7 +57,7 @@ class MonstersController < ApplicationController
   def update
     @monster = Monster.find(params[:id])
     @monster.update(monster_params)
-    redirect_to controller: 'show', action: 'get', id: @monster.id, hype: 'true'
+    redirect_to monster_path(@monster)
   end
 
   def destroy
