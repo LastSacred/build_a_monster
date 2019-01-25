@@ -14,15 +14,15 @@ bear_arms = Arm.create(name: "Bear Arms", img: "bear_arms.png", limg: "bear_arm_
 lobster_arms = Arm.create(name: "Lobster Arms", img: "lobster_arms.png", limg: "lobster_arm_l.png", rimg: "lobster_arm_r.png", weight: 94, power:186, defense: 920, cuteness: 13)
 # shield_arms = Arm.create(name: "Shield Arms", img: "bear_arms.png", limg: "bear_arm_l.png", rimg: "lobster_arm_r.png", weight: 136, power:77, defense: 950, cuteness: 5)
 
-tank_legs = Leg.create(name: "Tank Legs", img: "tank_legs.png", weight: 581, power: 105, defense: 930, speed: 37)
-horse_legs = Leg.create(name: "Horse Legs", img: "horse_legs.png", weight: 206, power: 304, defense: 536, speed: 174)
-rocket_legs = Leg.create(name: "Rocket Legs", img: "rocket_legs.png", weight: 380, power: 261, defense: 763, speed: 191)
-# high_heel_legs = Leg.create(name: "High Heel Legs", img: "tank_legs.png", weight: 143, power: 382, defense: 30, speed: 48)
+tank_legs = Leg.create(name: "Tank Legs", img: "tank_legs.png", weight: 250, power: 49, defense: 984, speed: 274)
+horse_legs = Leg.create(name: "Horse Legs", img: "horse_legs.png", weight: 162, power: 135, defense: 416, speed: 785)
+rocket_legs = Leg.create(name: "Rocket Legs", img: "rocket_legs.png", weight: 194, power: 111, defense: 612, speed: 978)
+# high_heel_legs = Leg.create(name: "High Heel Legs", img: "tank_legs.png", weight: 108, power: 150, defense: 284, speed: 398)
 
-laser_eyes_head = Head.create(name: "Laser Eyes Head", img: "laser_eyes_head.png", weight: 43, power: 314, defense: 112, cuteness: 10, intelligence: 7)
-mustache_head = Head.create(name: "Mustache Head", img: "mustache_head.png", weight: 32, power: 18, defense: 54, cuteness: 12, intelligence: 10)
-zombie_head = Head.create(name: "Zombie Head", img: "zombie_head.png", weight: 28, power: 82, defense: 3, cuteness: 14, intelligence: 1)
-# heart_eyes_head = Head.create(name: "Heart Eyes Head", img: "laser_eyes_head.png", weight: 35, power: 150, defense: 111, cuteness: 20, intelligence: 8)
+laser_eyes_head = Head.create(name: "Laser Eyes Head", img: "laser_eyes_head.png", weight: 57, power: 123, defense: 304, cuteness: 421, intelligence: 873)
+mustache_head = Head.create(name: "Mustache Head", img: "mustache_head.png", weight: 51, power: 43, defense: 240, cuteness: 326, intelligence: 711)
+zombie_head = Head.create(name: "Zombie Head", img: "zombie_head.png", weight: 74, power: 58, defense: 140, cuteness: 483, intelligence: 213)
+# heart_eyes_head = Head.create(name: "Heart Eyes Head", img: "laser_eyes_head.png", weight: 45, power: 0, defense: 84, cuteness: 394, intelligence: 654)
 
 lumberjack_torso = Torso.create(name: "Lumberjack Torso", img: "lumberjack_torso.png", weight: 250, power: 0, defense: 695, dadbod: true)
 # turtle_shell_torso = Torso.create(name: "Turtle Shell Torso", img: "lumberjack_torso.png", weight: 410, power: 0, defense: 877, dadbod: false)
