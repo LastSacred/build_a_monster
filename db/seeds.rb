@@ -10,7 +10,7 @@ require 'faker'
 flamethrower_arms = Arm.create(name: "Flamethrower Arms", img: "flamethrower_arms.png", limg: "flamethrower_arm_l.png", rimg: "flamethrower_arm_r.png", weight: 62, power: 244, defense: 384, cuteness: 142)
 bear_arms = Arm.create(name: "Bear Arms", img: "bear_arms.png", limg: "bear_arm_l.png", rimg: "bear_arm_r.png", weight: 72, power: 20, defense: 524, cuteness: 388)
 # gun_arms = Arm.create(name: "Gun Arms", img: "bear_arms.png", limg: "bear_arm_l.png", rimg: "lobster_arm_r.png", weight: 47, power: 20, defense: 420, cuteness: 426)
-hook_arms = Arm.create(name: "Hook Arms", img: "bear_arms.png", limg: "bear_arm_l.png", rimg: "lobster_arm_r.png", weight: 29, power: 108, defense: 392, cuteness: 203)
+hook_arms = Arm.create(name: "Hook Arms", img: "hook_arms.png", limg: "hook_arm_l.png", rimg: "hook_arm_r.png", weight: 29, power: 108, defense: 392, cuteness: 203)
 lobster_arms = Arm.create(name: "Lobster Arms", img: "lobster_arms.png", limg: "lobster_arm_l.png", rimg: "lobster_arm_r.png", weight: 83, power: 162, defense: 676, cuteness: 354)
 # shield_arms = Arm.create(name: "Shield Arms", img: "bear_arms.png", limg: "bear_arm_l.png", rimg: "lobster_arm_r.png", weight: 96, power: 43, defense: 816, cuteness: 121)
 
@@ -32,6 +32,7 @@ sumo_torso = Torso.create(name: "Sumo Torso", img: "sumo_torso.png", weight: 235
 manbearpig = Monster.create(name: "Manbearpig", head: laser_eyes_head, torso: iron_man_torso, arm: bear_arms, leg: tank_legs)
 curmudgeon = Monster.create(name: "The Curmudgeon", head: zombie_head, torso: lumberjack_torso, arm: lobster_arms, leg: horse_legs)
 boyfriend = Monster.create(name: "Sarah's Boyfriend", head: mustache_head, torso: sumo_torso, arm: flamethrower_arms, leg: rocket_legs)
+romeo = Monster.create(name: "Cap'n Romeo", head: heart_eyes_head, torso: turtle_shell_torso, arm: hook_arms, leg: high_heel_legs)
 
 faker_cats = [
   "planet",
