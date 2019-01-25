@@ -82,6 +82,12 @@
   left: 21%;
 }
 
+.turtle_shell_torso {
+  width: 54%;
+  top: 17.5%;
+  left: 20%;
+}
+
 .horse_legs {
   width: 62%;
   top: 45.5%;
@@ -106,7 +112,19 @@
   left:53%;
 }
 
+.lobster_arm_l.on_turtle_shell_torso {
+  width: 23%;
+  top: 25%;
+  left:53%;
+}
+
 .lobster_arm_r {
+  width: 23%;
+  top: 24.5%;
+  left:16.5%;
+}
+
+.lobster_arm_r.on_turtle_shell_torso {
   width: 23%;
   top: 24.5%;
   left:16.5%;

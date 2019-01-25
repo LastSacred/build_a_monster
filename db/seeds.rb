@@ -25,7 +25,7 @@ zombie_head = Head.create(name: "Zombie Head", img: "zombie_head.png", weight: 2
 # heart_eyes_head = Head.create(name: "Heart Eyes Head", img: "laser_eyes_head.png", weight: 35, power: 150, defense: 111, cuteness: 20, intelligence: 8)
 
 lumberjack_torso = Torso.create(name: "Lumberjack Torso", img: "lumberjack_torso.png", weight: 134, power: 10, defense: 648, dadbod: true)
-# turtle_shell_torso = Torso.create(name: "Turtle Shell Torso", img: "lumberjack_torso.png", weight: 162, power: 18, defense: 776, dadbod: false)
+turtle_shell_torso = Torso.create(name: "Turtle Shell Torso", img: "turtle_shell_torso.png", weight: 162, power: 18, defense: 776, dadbod: false)
 iron_man_torso = Torso.create(name: "Iron Man Torso", img: "iron_man_torso.png", weight: 214, power: 208, defense: 792, dadbod: false)
 sumo_torso = Torso.create(name: "Sumo Torso", img: "sumo_torso.png", weight: 235, power: 101, defense: 692, dadbod: true)
 
