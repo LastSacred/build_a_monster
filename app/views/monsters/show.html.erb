@@ -1,11 +1,11 @@
 <h1><%= @monster.name %></h1>
 
 <div class="monster_bod">
-  <%= image_tag(@imgs[:head], class: "head" + " " + @imgs[:head].gsub(".png", "")) %><br />
+  <%= image_tag(@imgs[:head], class: "head" + " " + @imgs[:head].gsub(".png", "") + " " + "on_" + @imgs[:torso].gsub(".png", "")) %><br />
   <%= image_tag(@imgs[:torso], class: "torso" + " " + @imgs[:torso].gsub(".png", "")) %><br />
-  <%= image_tag(@imgs[:leg], class: "leg" + " " + @imgs[:leg].gsub(".png", "")) %><br />
-  <%= image_tag(@imgs[:l_arm], class: "l_arm" + " " + @imgs[:l_arm].gsub(".png", "")) %><br />
-  <%= image_tag(@imgs[:r_arm], class: "r_arm" + " " + @imgs[:r_arm].gsub(".png", "")) %><br />
+  <%= image_tag(@imgs[:leg], class: "leg" + " " + @imgs[:leg].gsub(".png", "") + " " + "on_" + @imgs[:torso].gsub(".png", "")) %><br />
+  <%= image_tag(@imgs[:l_arm], class: "l_arm" + " " + @imgs[:l_arm].gsub(".png", "") + " " + "on_" + @imgs[:torso].gsub(".png", "")) %><br />
+  <%= image_tag(@imgs[:r_arm], class: "r_arm" + " " + @imgs[:r_arm].gsub(".png", "") + " " + "on_" + @imgs[:torso].gsub(".png", "")) %><br />
 </div>
 
 <h2>Stats</h2>
