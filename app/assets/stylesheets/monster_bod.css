@@ -148,10 +148,22 @@
   left:55.5%;
 }
 
+.flamethrower_arm_l.on_turtle_shell_torso {
+  width: 41%;
+  top: 22%;
+  left: 49%;
+}
+
 .flamethrower_arm_r {
   width: 32%;
   top: 24.5%;
   left:23%;
+}
+
+.flamethrower_arm_r.on_turtle_shell_torso {
+  width: 32%;
+  top: 24.5%;
+  left: 33%;
 }
 
 .bear_arm_l {
