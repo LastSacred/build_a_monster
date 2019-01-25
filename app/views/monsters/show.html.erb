@@ -1,5 +1,9 @@
 <h1><%= @monster.name %></h1>
 
+<%= audio_tag("musical_air_horn_dancehall_style_006.mp3", autoplay: true) if $hype %>
+<%= $hype = false %>
+
+
 <div class="monster_bod">
   <%= image_tag(@imgs[:head], class: "head" + " " + @imgs[:head].gsub(".png", "") + " " + "on_" + @imgs[:torso].gsub(".png", "")) %><br />
   <%= image_tag(@imgs[:torso], class: "torso" + " " + @imgs[:torso].gsub(".png", "")) %><br />

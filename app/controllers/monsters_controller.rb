@@ -43,7 +43,8 @@ class MonstersController < ApplicationController
   def create
 		@monster = Monster.new(monster_params)
 		if @monster.save
-			redirect_to monster_path(@monster)
+      $hype = true
+			redirect_to monster_path(@monster), hype: true
 		else
 			@heads = Head.all
 			@arms = Arm.all
@@ -56,7 +57,7 @@ class MonstersController < ApplicationController
   def update
     @monster = Monster.find(params[:id])
     @monster.update(monster_params)
-    redirect_to monster_path(@monster)
+    redirect_to controller: 'show', action: 'get', id: @monster.id, hype: 'true'
   end
 
   def destroy
