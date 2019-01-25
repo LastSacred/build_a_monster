@@ -43,7 +43,7 @@ class MonstersController < ApplicationController
   def create
 		@monster = Monster.new(monster_params)
 		if @monster.save
-      $hype = true
+      flash[:hype] = true
 			redirect_to monster_path(@monster), hype: true
 		else
 			@heads = Head.all

@@ -1,7 +1,7 @@
 <h1><%= @monster.name %></h1>
 
-<%= audio_tag("musical_air_horn_dancehall_style_006.mp3", autoplay: true) if $hype %>
-<%= $hype = false %>
+<%= audio_tag("musical_air_horn_dancehall_style_006.mp3", autoplay: true) if flash[:hype] %>
+<% flash.discard %>
 
 
 <div class="monster_bod">
