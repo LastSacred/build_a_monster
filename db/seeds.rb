@@ -42,7 +42,7 @@ faker_cats = [
   "star"
 ]
 
-50.times do
+while Monster.all.count < 16 do
   faker_cat = faker_cats.sample
   Monster.create(name: Faker::Space.public_send(faker_cat).tr("0-9", "").strip, head: Head.all.sample, torso: Torso.all.sample, arm: Arm.all.sample, leg: Leg.all.sample)
 end
