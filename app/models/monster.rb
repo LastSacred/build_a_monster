@@ -54,15 +54,15 @@ class Monster < ApplicationRecord
   end
 
   def dateability
-    dateability = self.cuteness * self.intelligence
+    dateability = [self.cuteness,self.intelligence].mean
     if self.dadbod?
-      if dateability > 180
-        dateability += 20
+      if dateability > 500
+        dateability += (dateability * 0.2)
       else
-        dateability -= 20
+        dateability -= (dateability * 0.2)
       end
     end
-    dateability
+    dateability.to_i
   end
 
   def stats
