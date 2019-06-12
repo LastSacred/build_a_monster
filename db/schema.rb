@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_01_23_205834) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "arms", force: :cascade do |t|
     t.string "name"
     t.string "limg"
@@ -50,10 +53,10 @@ ActiveRecord::Schema.define(version: 2019_01_23_205834) do
 
   create_table "monsters", force: :cascade do |t|
     t.string "name"
-    t.integer "head_id"
-    t.integer "torso_id"
-    t.integer "leg_id"
-    t.integer "arm_id"
+    t.bigint "head_id"
+    t.bigint "torso_id"
+    t.bigint "leg_id"
+    t.bigint "arm_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["arm_id"], name: "index_monsters_on_arm_id"
@@ -73,4 +76,8 @@ ActiveRecord::Schema.define(version: 2019_01_23_205834) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "monsters", "arms"
+  add_foreign_key "monsters", "heads"
+  add_foreign_key "monsters", "legs"
+  add_foreign_key "monsters", "torsos"
 end
